@@ -2,6 +2,9 @@ import { Directive,ElementRef, HostListener, Input  } from '@angular/core';
 
 @Directive({
   selector: '[highlightcolor]'
+  //<button class="btn btn-default" highlightcolor [highlightColor]="'green'"> My Button</button>
+  // <button class="btn btn-default" [highlightcolor]="'green'"> My Button</button>
+  // [] means define alias in @input
 })
 export class HighLightColorDirective {
 
